@@ -1,0 +1,45 @@
+************* EParray[ 1 ]: TestFile **********
+1             Aantal tijdsonafhankelijke tabellen: (=xInDep)
+0             ***table 0: table-type 0 (no interpolation) 
+1 3           rows, columns UITVOERTIJDSTIPPEN (jr)
+1 2 3 
+10            Aantal tijdsafhankelijk (xy)-tabellen (=xDep)******************
+0             table 0: table-type 0 (no interpolation)
+1             PrecNH4: Flux van NH4 in open-veld neerslag (kg N/ha/jr)
+0 14          Uit: 'Vast.txt'
+0             table 1: table-type 0 (no interpolation)
+1             PrecNO3: Flux van NO3 in open-veld neerslag (kg N/ha/jr)
+0 7           Uit: 'Vast.txt'
+0             table 2: table-type 0 (no interpolation)
+5             Mestgift (alleen niet-bos gebieden= VegType=11-17 (kg N/ha/jr)
+0 400
+1 410
+2 420
+3 430
+4 440
+0             table 3: table-type 0 (no interpolation)
+3             VegType (1-17)
+0 15          '15'=gras; 
+1 1           '1'=Grove, Corsicaanse, Oostenrijkse den
+2 15          Gras met kapeffect.
+0             table 4: table-type 0 (no interpolation)
+1             Neerslag (m/jr) Pag. 18
+0 0.80        
+0             table 5: table-type 0 (no interpolation)
+1             5: WatVerb (alleen niet-bos gebieden= VegType=11-17, m/jr)
+0 0.36        Uit: 'Vegtype2.txt'
+0             table 6: table-type 0 (no interpolation)
+1             Begrazen (alleen bosgebieden= VegType=1-10. JA als <> 0)
+0 0        
+0             table 7: table-type 0 (no interpolation)
+1             Plantjaar bos tov startjaar simulatie (jr)
+0 -19.0       
+0             table 8: table-type 0 (no interpolation)
+1             CN-verhouding in organische laag (LOM, mol/mol)
+0 30.0        
+0             table 9: table-type 0 (no interpolation)
+1             Initiele waarde van de opslag van stikstof in de organische laag
+0 462.0       (=LOM, kg N/ha). Geldt alleen voor bos.
+              20 jr -> C-opslag ca. 100 mol/m2 (fig. 8); CN=30 -> N=100/30= 3,3 mol/m2= 3300 mmol/m2
+			  =0.14*3300=462 kg N/ha
+              REM: point- of line-sources niet aan de orde bij stikstof-uitspoeling!

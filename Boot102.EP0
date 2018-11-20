@@ -1,0 +1,65 @@
+************* EParray[ cEP0 ]: DefaultBootFile *********************************
+10    Aantal tijdsonafhankelijke tabellen: == 2! (=xInDep)
+0     ***table 0: table-type 0 (no interpolation) 
+20 1  ***table 0: cNr_TINTode_Create_Settings (rows), 1 columns
+1              1:  IAlgRout      Algorithm-routine for integration
+1              2:  IStepRout     Stepper-routine for integration
+0              3:  IDCRoot       Functie voor het insluiten van een discontinuiteit
+0              4:  IDCStepRout   Stepper-routine voor modellen met discontinuiteiten
+1              5:  IDriver       Driver-routine for integration
+1              6:  I_nsubstep    Aantal sub-stappen in sommige algorithme-routines
+1              7:  I_nstep       Aantal sub-stappen in sommige stepper-routines
+1000           8:  I_maxstp      Max. aantal stappen idem
+2              9:  I_htry        Initiele stapgrootte
+0.01           10: I_hmin        Minimale stapgrootte
+0.01           11: I_eps         Tolerantie
+0              12: cModelID               * WORDT OVERSCHREVEN DOOR BOOT-PROCEDURE
+0              13: ReadyToRun             * WORDT OVERSCHREVEN DOOR BOOT-PROCEDURE
+0              14: cNrOfRPs               * WORDT OVERSCHREVEN DOOR BOOT-PROCEDURE
+0              15: cNrOfSQRQs             * WORDT OVERSCHREVEN DOOR BOOT-PROCEDURE
+0              16: cNrOfAvSpeedsToExport  * WORDT OVERSCHREVEN DOOR BOOT-PROCEDURE
+1              17: Area: wordt in Shell-omgeving vervangen door Shell-waarde
+0              18: Current_xs             * WORDT OVERSCHREVEN DOOR BOOT-PROCEDURE
+0              19: nDC                    * WORDT OVERSCHREVEN DOOR BOOT-PROCEDURE
+0              20: GERESERVEERD
+0     ***table 1: table-type 0 (no interpolation) 
+3 11  ***table 1: NrOfDepVar (rows), cNrOfDepVarOptions columns;  
+0   0 0 0 0 0    1 1        1 1 1 ystart[ 1 ]; Nat.neersl.overschot (m) wordt NIET uitgevoerd.
+0   2 3 0 0 0    1 0.442857 1 1 1 ystart[ 2 ]; Uitsp. (kg N/ha/jr) Conc. (mg NO3/l)
+0   0 0 0 0 0    1 1        1 1 1 ystart[ 3 ]; OpslgN in LOM (kg N/ha) wordt NIET uitgevoerd.
+0     ***table 2: table-type 0 (no interpolation) 
+3 8   ***Min/max key/init-values 
+1 17    0 1.5 0 1.5 0  1e+20  VegType (-), Pr (m/jr), WatVerb(niet bos, m/jr), Leeftd (jr)
+0  10000  0 200 0 200 10 100 Init_N_in_LOM (kg N/ha), PrecNH4, PrecNO3 (kg N/ha/jr), CN (-)
+0  1000   0 0   0   0  0   0 MestGift (kg N/ha/jr)
+0     ***table 3: table-type 0 (no interpolation)
+2 17  ***table 3: DEPOSITIE: FiltNH4 (-, rij 1); FiltNO3 (-, rij 2) bij VegType 1-17 (App. C)
+2.0 2.5 2.0 2.5 2.5 2.5 1.5 1.5 1.5 0.0 0.0 1.0 0.5 0.8 1.2 1.2 1.2
+1.2 1.2 1.2 1.2 1.2 1.2 0.6 0.6 0.6 0.0 0.0 0.3 0.1 0.2 0.4 0.4 0.4
+0     ***table 4: table-type 0 (no interpolation)
+2 10  ***table 4: N-OPNAME: MaxLftOpnN (jr, rij 1); MaxOpnNb (kg N/ha/jr, rij 2) bij VegType 1-10 (App. C)
+ 90 90 75   80   80   80   110   135   110    90
+ 28 49 33.6 44.1 44.1 44.1  37.2  32.2  26.6  28
+0     ***table 5: table-type 0 (no interpolation)
+1 10  ***table 5: N-mineralisatie ROM: MinROMmax (kg N/ha/jr) bij VegType 1-10 (App. C)
+53.9 53.9 53.9 53.9 53.9 53.9 53.9 53.9 53.9 53.9
+0     ***table 6: table-type 0 (no interpolation)
+1 4   ***table 6: N-mineralisatie ROM: KapMaxTijd, KapNitFr, GrasMaxtijd, GrasNitFr (jr, -, jr, -) VegType 1-10 (vast.txt)
+2 0.1 6 0.007
+0     ***table 7: table-type 0 (no interpolation)
+4 10  ***table 7: VASTL. N IN LOM: cnNO3-max/min & cnNH4-max/min (-, rij 1-4) bij VegType 1-10 (App. C)
+49.8 49.8 49.8 49.8 49.8 49.8 49.8 49.8 49.8 49.8
+-1.8 -1.8 -1.8 -1.8 -1.8 -1.8 -1.8 -1.8 -1.8 -1.8
+36.9 36.9 36.9 36.9 36.9 36.9 36.9 36.9 36.9 36.9 
+-7.3 -7.3 -7.3 -7.3 -7.3 -7.3 -7.3 -7.3 -7.3 -7.3
+0     ***table 8: table-type 0 (no interpolation)
+5 10  ***table 8: WATERVERBR BOMEN: Min/MaxLftWVma, MaxLftWVnu, WVlftNul, WVlftMax (jr, jr, jr, m/jr, m/jr) VegType 1-10 (App. C)
+ 40  20  30  20  20  20  60  60  60  40
+ 90  90  75  80  80  80 110 135 110  90
+400 400 400 400 400 400 400 400 400 400
+0.25 0.30 0.30 0.30 0.30 0.30 0.20 0.20 0.20 0.20
+0.48 0.68 0.48 0.68 0.68 0.68 0.64 0.48 0.64 0.60
+0     ***table 9: table-type 0 (no interpolation)
+1 17   ***table 9: OVERIG GEB.: UitSpFr (-) VegType 11-17 (App. C)
+0 0 0 0 0 0 0 0 0 0 1.0 0.4 0.4 0.6 0.2 0.1 0.1
+0             Aantal tijdsafhankelijk (xy)-tabellen **********************************
